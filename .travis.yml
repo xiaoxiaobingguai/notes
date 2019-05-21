@@ -13,7 +13,7 @@ deploy:
     github-token: $access_token
     repo: xiaoxiaobingguai/notes
     keep-history: true
-    target-branch: master:gh-pages
+    target-branch: master
     on:
         branch: master
 notifications:
