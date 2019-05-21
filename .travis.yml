@@ -1,9 +1,22 @@
 sudo: required
 language: node_js
 node_js: stable
-script: bash ./deploy.sh
-branches:
-  only:
-  - master
+install:
+    - npm install -g vuepress
+script:
+    - npm run build
+cache:
+    directories:
+        - "node_modules"
+deploy:
+    provider: pages
+    skip-cleanup: true
+    local_dir: docs/.vuepress/dist
+    github-token: $access_token
+    repo: xiaoxiaobingguai/notes
+    keep-history: true
+    target-branch: master:gh-pages
+    on:
+        branch: master
 notifications:
   email: false
