@@ -20,29 +20,22 @@ module.exports = {
         link: '/'
       },
       {
-        text: '库',
-        link: '/repository/'
+        text: '笔记',
+        items: [
+          {
+            text: 'java', link: '/notes/java/'
+          },
+          {
+            text: 'docker', link: '/notes/docker/'
+          },
+          {
+            text: 'spring', link: '/notes/spring/'
+          }
+        ]
       },
       {
-        text: '网站',
-        link: '/website/'
-      },
-      {
-        text: '文章',
-        link: '/article/'
-      },
-      // { text: '工具', link: 'https://google.com' },
-      {
-        text: '面试',
-        link: '/interview/'
-      },
-      {
-        text: 'Blog',
-        link: '/blog/'
-      },
-      {
-        text: 'ABC',
-        link: '/abc/'
+        text: '工具',
+        link: '/tool/'
       }
     ],
     sidebar: utils.inferSiderbars(),
