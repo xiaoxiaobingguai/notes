@@ -30,6 +30,9 @@ module.exports = {
           },
           {
             text: 'spring', link: '/notes/spring/'
+          },
+          {
+            text: 'env', link: '/notes/env/'
           }
         ]
       },
@@ -40,7 +43,7 @@ module.exports = {
     ],
     sidebar: utils.inferSiderbars(),
     lastUpdated: '上次更新',
-    repo: 'hello/vueblog',
+    repo: 'xiaoxiaobingguai/notes',
     editLinks: true,
     docsDir: 'docs',
     editLinkText: '在 GitHub 上编辑此页',
